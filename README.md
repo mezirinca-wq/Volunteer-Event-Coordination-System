@@ -1,16 +1,16 @@
-#Requirements-Engineering-Project
+# Requirements-Engineering-Project
 Volunteer-Event-Coordination-System
 
-##Student
+## Student
 Name: Iryna Liapkalo
 
-##Module:
+## Module:
 Requirements Engineering
 
-##Project Status
+## Project Status
 Week 1 — Initial discovery
 
-##Repository Purpose
+## Repository Purpose
 
 ## Description
 The Community Volunteer & Event Coordination System is a software solution designed to improve how local community events and volunteers are managed. 
