@@ -1,5 +1,18 @@
-# Volunteer-Event-Coordination-System
+#Requirements-Engineering-Project
+Volunteer-Event-Coordination-System
 
-The Community Volunteer & Event Coordination System is a proposed transaction-processing software solution designed to streamline the coordination of local community events and volunteer management. 
-Currently, event sign-ups and communication are handled through fragmented channels, including email, phone calls, spreadsheets, and paper forms. This leads to operational challenges such as manual matching delays, lack of availability visibility, communication breakdowns during schedule changes, and difficulties tracking required volunteer skills and qualifications.
-As part of the Requirements Engineering module, this project investigates the domain, identifies key stakeholders, elicits functional and quality requirements, and provides system models, low-fidelity prototypes, and change management strategies to ensure a robust system specification.
+##Student
+Name: Iryna Liapkalo
+
+##Module:
+Requirements Engineering
+
+##Project Status
+Week 1 — Initial discovery
+
+##Repository Purpose
+
+## Description
+The Community Volunteer & Event Coordination System is a software solution designed to improve how local community events and volunteers are managed. 
+Currently, coordination relies on email, phone calls, spreadsheets, and paper forms. This causes manual delays, lack of schedule visibility, communication issues during event changes, and difficulty tracking volunteer skills.
+As part of the Requirements Engineering module, this project investigates stakeholder needs, defines software requirements, builds system models, and develops prototypes to create a clear system specification.
