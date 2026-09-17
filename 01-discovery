@@ -1,1 +1,42 @@
+# Week 1 — Initial Discovery
+
+## 1. Facts
+People sign up using emails, phone calls, paper forms, or spreadsheets instead of one central place
+Event organisers spend hours matching the right volunteers to the right tasks by hand
+Volunteers often do not know which events actually need help
+is hard to let everyone know quickly when an event schedule changes or gets cancelled
+Some tasks need specific skills, background checks, or qualifications
+
+## 2. Assumptions
+Organisers have internet access during operational hours
+Volunteers prefer updates by text or email instead of phone calls
+Each event has a maximum number of volunteers it can accept
+
+
+## 3. Unknowns
+How are volunteer qualifications and background checks currently verified
+Who has authority to create, modify, or cancel a community event
+What privacy restrictions apply to sharing volunteer contact details
+
+## 4. Stakeholders
+Event organiser: needs easy matching tools. Concerned about last-minute cancellations
+General volunteer: needs clear schedule visibility. Concerned about missing updates
+Skilled volunteer: needs role-specific assignments matching qualifications
+IT support: needs security and account management
+Privacy officer: needs compliance with data protection laws
+Community members: needs clear, timely event information and accessible support. Concern about unreliable communication, missed events or poor support quality
+Sponsors: needs Simple reports showing community impact and how funds are used. Concern about Lack of transparency or wasted funding
+
+## 5. Goals
+
+
+## 6. Scope
+
+## 7. Candidate Requirements
+
+
+## 8. Requirement Surgery
+
+
+## 9. Reflection
 
