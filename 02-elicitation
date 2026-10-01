@@ -1,0 +1,73 @@
+# Week 2 — Requirements Elicitation & Candidate Requirements
+
+## 1. Stakeholder Analysis & Elicitation Plan
+To discover accurate requirements and avoid single-stakeholder bias, we investigate the needs of key roles using targeted, non-solution-leading questions.
+
+### 1.1 Interview Plan: Event Organiser
+* **Goal:** Understand current manual matching pain points and notification workflows.
+* **Open Questions:**
+  * *How do you currently match volunteers to specific event roles?*
+  * *What happens when a volunteer cancels at the last minute?*
+  * *How do you verify if a volunteer has the required qualifications (e.g., Garda vetting or first aid)?*
+* **Probing / Clarifying Questions:**
+  * *When you say an event is "urgent", what exact criteria determines that urgency?*
+  * *What specific information do you need to see before approving a volunteer for a restricted task?*
+
+### 1.2 Interview Plan: General & Skilled Volunteers
+* **Goal:** Understand registration barriers and notification preferences.
+* **Open Questions:**
+  * *How do you currently find out about upcoming community events that need help?*
+  * *What issues do you encounter when an event schedule changes or is cancelled?*
+* **Closed / Fact-Checking Questions:**
+  * *Do you currently receive event reminders via email or messaging apps?*
+
+---
+
+## 2. Stakeholder Conflicts & Resolution Analysis
+Requirements Engineering requires identifying conflicting stakeholder goals early and negotiating trade-offs.
+
+* **Conflict Scenario:** Volunteer Registration Flexibility vs. Event Organiser Preparation Time & Compliance.
+  * **Volunteer Perspective:** Wants last-minute sign-ups and instant registration without waiting for profile approvals.
+  * **Event Organiser / Tech Specialist Perspective:** Needs volunteer rosters finalized 48 hours in advance to prepare equipment and verify qualifications (e.g., Garda vetting).
+  * **Privacy/Security Officer Perspective:** Requires strict admin sign-off before unvetted users can access event details involving vulnerable groups.
+* **Resolution Strategy:**
+  * Define two distinct role tiers: *General Roles* (allow sign-up up to 12 hours before) and *Restricted Roles* (require verified qualifications and close 48 hours prior to the event).
+
+---
+
+## 3. Candidate Requirements Catalogue
+Candidate requirements are preliminary, testable statements specifying what the system must do (**Functional**) and how well it must perform (**Non-Functional**).
+
+### 3.1 Functional Requirements (FR)
+* **FR-01 (Account & Profile):** The system shall allow volunteers to register an account and select their skills, general availability, and upload qualification documents.
+* **FR-02 (Event Creation):** The system shall allow event organisers to create events, specify required volunteer capacities, and set qualification pre-requisites for each role.
+* **FR-03 (Automated Verification Check):** The system shall automatically prevent unverified volunteers from registering for restricted roles requiring background checks (e.g., Garda vetting).
+* **FR-04 (Automated Notifications):** The system shall automatically send email notifications to all registered volunteers within 2 minutes of an event cancellation or time change.
+* **FR-05 (Roster Management):** The system shall allow organisers to view, confirm, and export volunteer attendance rosters for their assigned events.
+
+### 3.2 Non-Functional Requirements (NFR)
+* **NFR-01 (Usability):** At least 90% of first-time volunteer users shall be able to search and register for an event within 3 minutes without assistance.
+* **NFR-02 (Performance/Response Time):** Event availability searches shall return updated results in under 2 seconds during normal peak load.
+* **NFR-03 (Security & Privacy / GDPR):** Volunteer personal contact details (phone number, email) shall only be visible to the event organiser managing that specific event.
+* **NFR-04 (Availability):** The system shall be available for volunteer registration 99.5% of the time during standard operational hours.
+
+---
+
+## 4. Requirement Surgery (Statement Analysis)
+Requirements Engineers must transform raw stakeholder statements into formal, testable requirements.
+
+### Example 1
+* **Raw Stakeholder Statement:** *"We need a calendar that everyone can see so people know what's happening."*
+* **Analysis:** The statement proposes a specific feature (calendar) without defining access rules, privacy restrictions, or update behavior.
+* **Refined Functional Requirement (FR):** *"The system shall display a public schedule of upcoming open events filtered by date, location, and required skills."*
+* **Refined Non-Functional Requirement (NFR):** *"Public event schedules shall update in real-time within 5 seconds of an event status change."*
+
+### Example 2
+* **Raw Stakeholder Statement:** *"The system should make booking volunteers super fast and easy."*
+* **Analysis:** "Super fast" and "easy" are subjective and un-testable terms.
+* **Refined Functional Requirement (FR):** *"The system shall allow an organiser to assign a qualified volunteer to an open role in no more than 3 clicks from the dashboard."*
+
+---
+
+## 5. Reflection (Week 2)
+Moving from initial discovery to formal elicitation highlighted that stakeholder statements cannot be directly copied as system requirements. Analyzing vague requests like "fast booking" or "shared calendars" into precise FRs and NFRs prevents scope creep and ensures testability. Addressing the conflict between volunteer flexibility and organiser compliance early helped establish role-based registration rules before system modeling begins.
