@@ -8,7 +8,7 @@ Name: Iryna Liapkalo
 Requirements Engineering
 
 ## Project Status
-Week 1 — Initial discovery
+Week 2 — Initial discovery
 
 ## Repository Purpose
 
