@@ -1,1 +1,61 @@
+# Week 3 — Requirements Analysis, Specification & Quality
+
+
+## 1. Requirements Quality Control (CARS Criteria Review)
+
+To ensure high quality before modeling, candidate requirements are evaluated against the CARS framework (Clear, Accurate, Realistic, Specific) and checked for testability
+
+
+### 1.1 Quality Evaluation Matrix
+
+Req ID. Requirement Statement. Quality Defect Identified. Refined & Testable Requirement 
+The system shall allow volunteers to register quickly and upload documents. Vague quickly. Lacks clear success metrics. FR-01: The system shall allow volunteers to create an account, enter skills and general availability, and upload PDF or JPEG qualification documents up to 5MB in size
+The system shall check if a volunteer is vetted before letting them join. Unclear timing and missing error handling. FR-03: The system shall automatically prevent unverified volunteers from registering for restricted roles requiring background checks (e.g., Garda vetting) and display a warning message indicating missing requirements.
+The application should be super fast and easy to navigate for users. Subjective super fast, easy. Untestable. *NFR-01 (Usability): At least 90% of first-time volunteer users shall complete event registration in 3 clicks or fewer from the main dashboard without administrative assistance
+System responses must be quick during busy hours. Ambiguous quick,"busy hours.  NFR-02 (Performance): Event availability search queries shall display updated results in under 2.0 seconds under a simultaneous load of up to 500 active users
+
+
+
+## 2. Prioritised Requirements Specification (MoSCoW Method)
+
+Requirements are categorized using the MoSCoW prioritization framework to define MVP (Minimum Viable Product) scope and manage development risks.
+
+
+### 2.1 Must Have (Critical for MVP)
+REQ-MUST-01 (FR): The system shall allow volunteers to register an account and manage profile skills, availability, and qualification documents
+REQ-MUST-02 (FR): The system shall allow event organisers to create community events, define role capacities, and set qualification pre-requisites
+REQ-MUST-03 (FR): The system shall enforce role-based access control, preventing unverified volunteers from booking restricted event roles
+REQ-MUST-04 (NFR): Personal volunteer contact information (phone number, email) shall only be visible to the event organiser managing that specific event GDPR Compliance
+
+
+### 2.2 Should Have (High Priority)
+REQ-SHOULD-01 (FR): The system shall automatically send email notifications to registered volunteers within 2 minutes of an event cancellation or schedule change
+REQ-SHOULD-02 (FR): The system shall allow event organisers to export volunteer attendance rosters in CSV format
+REQ-SHOULD-03 (NFR): Search results for available events shall load in under 2 seconds during peak usage
+
+
+### 2.3 Could Have (Desirable if Resources Permit)
+REQ-COULD-01 (FR): The system shall maintain an automated waitlist for full events and notify waitlisted volunteers if a slot opens up
+REQ-COULD-02 (FR): The system shall display a calendar view showing upcoming volunteer commitments on the user dashboard
+
+
+### 2.4 Won't Have (Out of Scope for Initial Release)
+REQ-WONT-01: Native mobile applications iOS/Android — web-first responsive design will be used instead
+REQ-WONT-02: In-app direct messaging between volunteers
+
+
+
+## 3. Traceability & Acceptance Criteria
+Each requirement must link back to a stakeholder goal and include verifiable acceptance criteria to support testing
+
+
+### Traceability Matrix Example
+Requirement ID: REQ-MUST-03
+Source Stakeholder: Privacy Officer / Event Organiser
+Strategic Goal: Ensure safety, regulatory compliance, and proper Garda vetting for restricted volunteer roles
+Acceptance Criteria (Given-When-Then):
+Given an unverified volunteer is logged into the system
+When they attempt to register for a Restricted Role e.g., Youth Activity Leader
+Then the system shall block the registration, display the message Verified Garda Vetting Required, and provide a link to upload verification documents
+
 
