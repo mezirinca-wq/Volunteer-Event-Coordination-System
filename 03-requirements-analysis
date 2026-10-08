@@ -58,4 +58,5 @@ Given an unverified volunteer is logged into the system
 When they attempt to register for a Restricted Role e.g., Youth Activity Leader
 Then the system shall block the registration, display the message Verified Garda Vetting Required, and provide a link to upload verification documents
 
-
+## Reflection
+Completing this analysis showed that user requests are often vague. Applying ISO 29148 and the CARS criteria helped turn words like quick or easy into measurable, testable requirements. Using the MoSCoW method made it clear what must be built first for the MVP, ensuring compliance and Garda vetting rules are prioritized over extra features
